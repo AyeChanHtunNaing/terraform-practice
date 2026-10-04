@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Infrastructure as Code (IaC) with Terraform",
+    "shortTitle": "IaC with Terraform",
+    "topics": [
+      "What Infrastructure as Code is",
+      "Declarative infrastructure",
+      "Immutable infrastructure",
+      "Benefits of IaC",
+      "Version control",
+      "Reusability",
+      "Multi-cloud",
+      "Hybrid cloud",
+      "Service-agnostic workflows"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Terraform Fundamentals",
+    "shortTitle": "Terraform Fundamentals",
+    "topics": [
+      "Terraform providers",
+      "Provider configuration",
+      "required_providers",
+      "Provider versions",
+      "Provider aliases",
+      "Provider installation",
+      "Provider plugins",
+      ".terraform.lock.hcl",
+      "Terraform state fundamentals"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Core Terraform Workflow",
+    "shortTitle": "Core Workflow",
+    "topics": [
+      "terraform init",
+      "terraform plan",
+      "terraform apply",
+      "terraform validate",
+      "terraform fmt",
+      "Plan files",
+      "-out",
+      "-replace",
+      "-destroy",
+      "moved blocks",
+      "Import workflow",
+      "Provider/module upgrades",
+      "Dependency ordering",
+      "Partial apply failures"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Terraform Configuration",
+    "shortTitle": "Configuration",
+    "topics": [
+      "Resources",
+      "Data sources",
+      "Variables",
+      "Outputs",
+      "Locals",
+      "Expressions",
+      "References",
+      "Maps",
+      "Objects",
+      "count",
+      "for_each",
+      "depends_on",
+      "Resource dependencies",
+      "Lifecycle rules",
+      "create_before_destroy",
+      "ignore_changes",
+      "Preconditions",
+      "Postconditions",
+      "Sensitive values",
+      "Ephemeral values",
+      "Dynamic configuration",
+      "Terraform functions"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Terraform Modules",
+    "shortTitle": "Modules",
+    "topics": [
+      "Root modules",
+      "Child modules",
+      "Module inputs",
+      "Module outputs",
+      "Module sources",
+      "Local modules",
+      "Registry modules",
+      "Git modules",
+      "Module version constraints",
+      "Provider inheritance",
+      "Module reuse"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Terraform State Management",
+    "shortTitle": "State Management",
+    "topics": [
+      "terraform.tfstate",
+      "Local state",
+      "Remote state",
+      "Backends",
+      "S3 backend",
+      "State locking",
+      "State migration",
+      "Backend configuration",
+      "State security",
+      "State sharing",
+      "State drift",
+      "terraform refresh-only",
+      "terraform state"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Maintain Infrastructure with Terraform",
+    "shortTitle": "Maintain Infrastructure",
+    "topics": [
+      "terraform import",
+      "Import blocks",
+      "Existing infrastructure",
+      "terraform state list",
+      "terraform state show",
+      "terraform show",
+      "Terraform logging",
+      "TF_LOG",
+      "TF_LOG_PATH",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "HCP Terraform",
+    "shortTitle": "HCP Terraform",
+    "topics": [
+      "HCP Terraform",
+      "Workspaces",
+      "Projects",
+      "VCS-driven workflow",
+      "Remote operations",
+      "Variable sets",
+      "Run triggers",
+      "Run tasks",
+      "Sentinel",
+      "OPA",
+      "Agents",
+      "Private Registry",
+      "Drift detection",
+      "Health checks",
+      "Governance",
+      "Policies"
+    ]
+  }
+]
