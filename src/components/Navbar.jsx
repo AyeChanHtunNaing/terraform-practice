@@ -9,7 +9,6 @@ import {
   Menu,
   X,
   CheckCircle2,
-  BookOpen,
 } from 'lucide-react';
 import { getOverallProgressStats } from '../services/storageService';
 
@@ -30,10 +29,9 @@ export function Navbar({ activeRoute, navigate }) {
 
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'notes', label: 'Notes (မြန်မာ)', icon: BookOpen },
     { id: 'exams', label: 'Exams', icon: Layers },
     { id: 'objectives', label: 'Objectives', icon: Compass },
-    { id: 'random', label: 'Random', icon: Shuffle },
+    { id: 'random', label: 'Random Quiz', icon: Shuffle },
     {
       id: 'review',
       label: 'Incorrect',
