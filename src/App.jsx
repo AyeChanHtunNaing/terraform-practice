@@ -9,6 +9,7 @@ import { RandomPracticePage } from './pages/RandomPracticePage';
 import { IncorrectReviewPage } from './pages/IncorrectReviewPage';
 import { ResultsPage } from './pages/ResultsPage';
 import { QuestionsPage } from './pages/QuestionsPage';
+import { StudyNotesPage } from './pages/StudyNotesPage';
 import { applyTheme } from './services/storageService';
 
 export default function App() {
@@ -73,6 +74,10 @@ export default function App() {
 
     if (path === 'questions') {
       return <QuestionsPage navigate={navigate} />;
+    }
+
+    if (path === 'notes' || path === 'study-notes') {
+      return <StudyNotesPage navigate={navigate} />;
     }
 
     return <Dashboard navigate={navigate} />;

@@ -5,7 +5,8 @@ import {
   Layers,
   ArrowRight,
   RotateCcw,
-  ChevronRight
+  ChevronRight,
+  BookOpen
 } from 'lucide-react';
 import {
   getOverallProgressStats,
@@ -136,6 +137,36 @@ export function Dashboard({ navigate }) {
             {overallStats.incorrectCount > 0 ? 'Needs remediation' : 'No mistakes recorded'}
           </p>
         </div>
+      </div>
+
+      {/* Myanmar Study Notes Banner */}
+      <div className="bg-gradient-to-r from-indigo-50/90 via-white to-purple-50/70 border border-indigo-100 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-2xs">
+        <div className="flex items-center gap-3.5">
+          <div className="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+            <BookOpen className="w-5 h-5" />
+          </div>
+          <div className="space-y-0.5">
+            <div className="flex items-center gap-2">
+              <h3 className="font-bold text-slate-900 text-sm sm:text-base">
+                Objective ၁ မှ ၈ အထိ မြန်မာဘာသာ Exam Notes
+              </h3>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700 font-mono">
+                NEW
+              </span>
+            </div>
+            <p className="text-xs text-slate-600 leading-relaxed">
+              IaC, Providers, Workflow, Lifecycle, Modules, State, Logging, HCP Terraform အပြည့်အစုံ လေ့လာရန်
+            </p>
+          </div>
+        </div>
+
+        <button
+          onClick={() => navigate('notes')}
+          className="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors shadow-xs flex-shrink-0"
+        >
+          <span>မှတ်စုများ ဖတ်ရှုရန်</span>
+          <ArrowRight className="w-3.5 h-3.5" />
+        </button>
       </div>
 
       {/* Objective Progress Cards */}
